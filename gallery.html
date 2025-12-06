@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Sir's Tuition</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="gallery.css">
+  
+
+</head>
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <h1>Vinod Sir's Tuition</h1>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Courses</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </header>
+
+
+  <!-- Gallery Section -->
+   <section id="gallery">
+  <h2>Our Gallery</h2>
+  <p>Some wonderful memories from our classes, picnics, and parties 🎉</p>
+
+  <div class="gallery-category">
+    <h3>📚 Class Moments</h3>
+    <div class="gallery-container">
+      <img src="images/class1.jpg" alt="COMMING SOON">
+      <img src="images/class2.jpg" alt="COMMING SOON">
+      <img src="images/class3.jpg" alt="COMMING SOON">
+    </div>
+  </div>
+
+  <div class="gallery-category">
+    <h3>🌳 Picnics</h3>
+    <div class="gallery-container">
+      <img src="images/class1.jpg" alt="COMMING SOON">
+      <img src="images/class2.jpg" alt="COMMING SOON">
+      <img src="images/class3.jpg" alt="COMMING SOON">
+    </div>
+  </div>
+
+  <div class="gallery-category">
+    <h3>🎈 Parties & Celebrations</h3>
+    <div class="gallery-container">
+     <img src="images/class1.jpg" alt="COMMING SOON">
+      <img src="images/class2.jpg" alt="COMMING SOON">
+      <img src="images/class3.jpg" alt="COMMING SOON">
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer Section -->
+
+<footer class="footer-section">
+  <div class="footer-container">
+    
+    <!-- About / Logo -->
+    <div class="footer-about">
+      <h2 class="footer-logo">Vinod Sir Classes</h2>
+      <p>Shaping bright minds with the best tuition in Mumbai. Learn, grow, and succeed!</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><span class="icon">📍</span> Mumbai, Maharashtra</p>
+      <p><span class="icon">📧</span> <a href="mailto:vinodsirclasses@gmail.com">vinodsirclasses@gmail.com</a></p>
+      <p><span class="icon">📞</span> <a href="tel:+919876543210">+91 98765 43210</a></p>
+    </div>
+    
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Subscribe</h3>
+      <p>Get updates about new courses and offers!</p>
+      <form id="newsletterForm">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletterMessage" class="form-message"></p>
+    </div>
+  </div>
+  
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Vinod Sir Classes. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  
+  <!-- Floating Background Icons -->
+  <div class="footer-floating-icons">
+    <span class="animate-float">💡</span>
+    <span class="animate-float-slow">📚</span>
+    <span class="animate-float-fast">✏️</span>
+  </div>
+</footer>
+
+    <script>
+  firebase.auth().onAuthStateChanged(user => {
+    if (!user) {
+      // Redirect to home if not logged in
+      window.location.href = "first.html";
+    }
+  });
+</script>
+
+</body>
+</html>
